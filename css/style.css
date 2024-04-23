@@ -34,3 +34,51 @@ body{
 .header a + a{
     margin-left: 40px;
 }
+.center {
+    color: #ffffff;
+    padding: 30px 0 20px;
+    width: 953px;
+    height: 356px;
+    margin-top: 100px;
+}
+button {
+    width: 297px;
+    height: 53px;
+    top: 598px;
+    left: 240px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    opacity: 0px;
+    margin-top: 50px;
+    text-align: center;
+    color: #115793; 
+    font-size: 18px; 
+    line-height: 27px;
+    font-weight: 500;
+    border: none;
+}
+.bottom {
+    position: relative;
+}
+.circle {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 30%;
+    margin-top: 220px;
+    color: #ffffff;
+    position: absolute;
+}
+.arrow {
+    padding-left: 30px;
+    padding-top: 250px;
+}
+.slovo {
+    color: #ffffff;
+    margin: 0;
+    padding-left: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
