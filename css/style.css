@@ -62,7 +62,6 @@ body {
     margin: 20px 0 50px;
     line-height: 150%;
     max-width: 831px;
-
 }
 
 .center a {
@@ -148,4 +147,27 @@ body {
 .block img {
     padding-top: 25px;
     padding-left: 25px;
+}
+.slovo {
+    color: #ffffff;
+    margin: 0;
+    padding-left: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+.gift .container {
+    border: 1px solid white;
+}
+.block{
+    height: 200px;
+    background-color: #e6f9ff;
+}
+.gift-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gift-item {
+    width: 24%;
 }
