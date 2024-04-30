@@ -102,7 +102,6 @@ body {
 }
 
 .gift .container {
-    width: 1440px;
     border: 1px solid white;
     margin-top: 100px;
 }
@@ -111,9 +110,7 @@ body {
 .block1 {
     margin: 10px;
     max-width: 832px;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 130%;
+
 }
 
 .block {
@@ -142,9 +139,14 @@ body {
     max-width: 295px;
     padding-left: 25px;
     padding-right: 25px;
-    align-items:start;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
 }
 .block img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 25px;
     padding-left: 25px;
 }
