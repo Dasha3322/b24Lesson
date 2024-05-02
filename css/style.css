@@ -103,7 +103,7 @@ body {
 
 .gift .container {
     border: 1px solid white;
-    margin-top: 100px;
+    padding: 100px 0;
 }
 
 
@@ -139,7 +139,7 @@ body {
     max-width: 295px;
     padding-left: 25px;
     padding-right: 25px;
-    min-height: 72px;
+    min-height: 81px;
     display: flex;
     align-items: center;
 }
@@ -150,26 +150,17 @@ body {
     padding-top: 25px;
     padding-left: 25px;
 }
-.slovo {
-    color: #ffffff;
-    margin: 0;
-    padding-left: 50px;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-}
-.gift .container {
-    border: 1px solid white;
-}
-.block{
-    height: 200px;
-    background-color: #e6f9ff;
-}
-.gift-row {
+.table {
+    background-color:rgba(202, 211, 221, 1);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
-.gift-item {
-    width: 24%;
+.block_table{
+    background-color: #f2fcff;
+    border: 1px solid white;
 }
+
+
+
+
+

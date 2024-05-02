@@ -1,0 +1,34 @@
+@media (max-width:1366px) {
+    .center h1 {
+        font-size: 30px; /*уменьшение размера при уменьшении экрана менее 1366*/
+    }
+}
+@media (max-width:576px) {
+    .header {
+        flex-direction: column; /*при экране 576 выстраиваются в столбик*/
+    }
+    .header-info {
+        margin-top: 10px;
+    }
+}
+@media (min-width:1024px) {
+    
+}
+@media (max-height:1024px) {
+    
+}
+@media (min-width:1024px) and (max-width:1366px) {
+    
+}
+@media (orientation:portair) { /*портретная ориентация*/
+    
+}
+@media (orientation:landscape) { /*альбомная ориентация*/
+    
+}
+@media (print) { /* при использовании кнопки печать, будет выводиться на печать страница*/
+    
+}
+@media (max-width:1420px) {
+    
+}
