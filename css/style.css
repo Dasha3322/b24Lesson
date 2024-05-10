@@ -9,10 +9,10 @@ body {
     line-height: 150%;
     font-family: "Inter", sans-serif;
 }
-button, input {
+button,input{
     appearance: none;
-}
 
+}
 .container {
     max-width: 1440px;
     width: 96%;
@@ -20,38 +20,36 @@ button, input {
 }
 
 .hero {
-    /*background-image: url(../images/herobg.jpg);
-    background-size: cover;*/
+    /* background-image: url(../images/hero.jpg);
+    background-size: cover; */
     background-color: #16C7FF;
     min-height: 100vh;
     padding-bottom: 60px;
     box-sizing: border-box;
     position: relative;
-
 }
-.hero:after {
+
+.hero:after{
     content: '';
-    height: 88%;
-    width: 100%;
+    height: 100%;
+    width: 62.2%;
     background-image: url(../images/hero-after.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
     position: absolute;
     bottom: 0;
-    right: -6px;
-
+    right: 0;
 }
-.hero .container {
+.hero .container{
     position: relative;
     z-index: 100;
 }
-.hero-img {
+.hero-img{
     position: absolute;
-    right: -66px;
-    bottom: -28px;
+    right: -64px;
+    bottom: -40px;
 }
-
 .header {
     padding: 30px 0 20px;
     border-bottom: 1px rgba(255, 255, 255, 0.6) solid;
@@ -90,6 +88,7 @@ button, input {
     margin: 20px 0 50px;
     line-height: 150%;
     max-width: 831px;
+
 }
 
 .center a {
@@ -131,78 +130,13 @@ button, input {
 
 .gift .container {
     border: 1px solid white;
-    padding: 100px 0;
 }
 
-
-.block1 h2{
-    margin: 0;
-    max-width: 832px;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 130%;
-    color: #1F1F1F;
-}
-.block1.white h2,.block1.white p{
-    color: #fff;
-}
-.grey-section {
-    background-color: #F7F9FC;
-    padding: 100px 0;
-}
-.offer{
-    padding: 50px 50px;
-    background-color: #16C7FF;
-    border-radius: 10px;
-}
-.offer .left{
-    width: 60%;
-}
-.icon img{
-    height: 40px;
-    width: 40px;
-    
-}
-.bonuses {
-    padding: 71px 40px;
-    background-color: white;
-    border-radius: 10px;
-}
-.bonuses .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px 30px;
-}
-.bonuses-item{
-    display: flex;
-    align-items:start;
-    justify-content: center;
-    margin-right: 20px;
-}
-.bonuses-item p{
-    margin: 0;
-}
-input{
-    outline: 0;
-}
-.form a{
-    color: #fff;
-}
-.form p{
-    color: #fff;
-}
-
-.block {
-    width: 345px;
-    height: 216px;
-    background-color: #e6f9ff;
-    border-radius: 10px;
-}
 .gift-row {
     display: flex;
     flex-wrap: wrap;
-    margin: 60px -10px -10px -10px;
-    justify-content: space-between;
+    margin: -10px;
+    /* justify-content: space-between; */
 }
 
 .gift-item {
@@ -210,48 +144,71 @@ input{
     padding: 10px;
     box-sizing: border-box;
 }
-.block p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;  
-    max-width: 295px;
-    padding-left: 25px;
-    padding-right: 25px;
+
+.gift{
+    padding: 100px 0;
+}
+.gift .row{
+    display: flex;  
+    flex-wrap: wrap;
+    margin: -10px;
+}
+.gift .item-container{
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.gift .item{
+    height: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #E6F9FF;
+}
+.gift .item-icon{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: #00AEEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.gift p{
     min-height: 81px;
     display: flex;
     align-items: center;
 }
-.block img {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 25px;
-    padding-left: 25px;
-}
-.main {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-left: 240px;
-    padding-right: 240px;
+
+.section-head{
+    margin-bottom: 60px;
     max-width: 832px;
+}
+.section-head h2{
+    color: #1F1F1F;
+    font-size: 40px;
+    line-height: 130%;
+    font-weight: 500;
+    margin: 0;
+}
+.section-head.white h2,.section-head.white p{
+    color: #fff;
 }
 .table {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 240px;
-    padding-right: 240px;
+    margin: 0 -10px 100px -10px;
 
 }
 .block_table{
     background-color: white;
-    width: 33%;
-    margin-bottom: 10px;
-    padding: 10px;
+    width: 31%;
     border: 1px solid white;
-    box-sizing: border-box;
-    
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-bottom: 20px;
 }
 .background {
     display: flex;
@@ -260,23 +217,96 @@ input{
 .block_table p{
     background-color: #E6F9FF;
     border-radius: 5%;
-    display: flex;
-    align-items: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     max-width: 415px;
+    min-height: 136px; /*в макете высота голубых блоков разная, не разобрались как правильно сделать и сделали мин высоту по максимальному блоку*/
+    display: flex;
+    align-items: center;
+    margin: 20px 30px 20px 22px;
+    padding: 0 20px;
+}
+.block_table h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+ul {
+    list-style-type:none;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+li {
+    margin-bottom: .5em;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+li::before{
+    content: '\25CF';
+    color: #00AEEF;
+    padding-right: 22px;
 }
 
+.grey-section{
+    background-color: #F7F9FC;
+    padding: 100px 0;
+}
 
-@media (max-width:1024px) {
-    .gift-item {
-        width: 50%;
-    }
+.offer{
+    padding: 50px;
+    background-color: #16C7FF;
+    border-radius: 10px;
+}
+.offer .left{
+    width: 60%;
+}
+.bonuses{
+    padding: 71px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.bonuses .grid{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 40px 30px;
+}
+.bonuses-item{
+    display: flex;
     
 }
+.bonuses-item .icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #00AEEF;
+    flex-shrink: 0;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+.bonuses-item  p{
+    margin: 0;
+}
+input::placeholder{
+    color: red;
+}
+input{
+    outline: 0;
+}
+@media (max-width:1024px){
+    .gift .item-container{
+        width: 50%;
+    }
+}
 
-
-
-
+@media (max-width:576px){
+    .gift .item-container{
+        width: 100%;
+    }
+}
