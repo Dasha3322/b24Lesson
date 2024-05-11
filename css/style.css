@@ -260,14 +260,70 @@ li::before{
     padding: 50px;
     background-color: #16C7FF;
     border-radius: 10px;
+    position: relative;
 }
 .offer .left{
     width: 60%;
+}
+.block1_white {
+    display: flex;
+    justify-content: space-between;
+
+}
+.left_white {
+    color: #ffffff;
+    max-width: 781px;
+    /* border: 1px solid black; */
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.left_white h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    margin: 0 0 20px 0;
+}
+.left_white p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin: 0;
+}
+.cloud-left {
+    position: absolute;
+    top: 54px;
+    left: 872px;
+}
+.cloud-right {
+    position: absolute;
+    top: 63px;
+    left: 1043px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    /* border: 1px solid black; */
+    margin-right: 40px;
+    width: 762px;
+}
+.right {
+    /* border: 1px solid black; */
+    width: 538px;
 }
 .bonuses{
     padding: 71px 40px;
     background-color: #fff;
     border-radius: 10px;
+    max-height: 362px;
+    box-sizing: border-box;
+}
+.bonuses-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin: 0 0 40px 0;
 }
 .bonuses .grid{
     display: grid;
@@ -292,13 +348,59 @@ li::before{
 }
 .bonuses-item  p{
     margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
 }
 input::placeholder{
-    color: red;
+    color: #1F1F1F;
+    padding-left: 20px;
 }
 input{
-    outline: 0;
+    height: 60px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #E9F2FF;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
+.form p, a {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    max-width: 400px;
+    margin-bottom: 27px;
+}
+.form button {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px 24px;
+    width: 224px;
+    height: 53px; 
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.butt {
+    display: block;
+    box-sizing: border-box;
+    background-color: #fff;
+    line-height: 150%;
+    font-size: 18px;
+    color: #115793;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 0;
+}
+
 @media (max-width:1024px){
     .gift .item-container{
         width: 50%;
