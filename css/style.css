@@ -3,7 +3,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+html {
+    scroll-behavior: smooth                                                                             ;
+}
 body {
     font-size: 18px;
     line-height: 150%;
@@ -261,6 +263,8 @@ li::before{
     background-color: #16C7FF;
     border-radius: 10px;
     position: relative;
+    margin-bottom: 100px;
+
 }
 .offer .left{
     width: 60%;
@@ -307,10 +311,12 @@ li::before{
     /* border: 1px solid black; */
     margin-right: 40px;
     width: 762px;
+
 }
 .right {
     /* border: 1px solid black; */
     width: 538px;
+
 }
 .bonuses{
     padding: 71px 40px;
@@ -400,15 +406,91 @@ input{
     border-radius: 10px;
     margin: 0;
 }
+.free_consult{
+    display: block;
+    box-sizing: border-box;
+    background-color: #16C7FF;
+    max-width: 1440px;
+    width: 96%;
+    margin: 0 auto;
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.free_consult h2{
+    margin: 0;
+    font-size: 40px;
+    line-height: 130%;
+    max-width: 579px;
+}
+.free_consult p {
+    margin: 20px 0 50px;
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 579px;
+}
+.consult-link {
+    display: block;
+    max-width: 224px;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px 24px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #115793;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.footer {
+    max-width: 1920px;
+    padding: 30px 240px 20px;
+    border-bottom: 1px rgba(255, 255, 255, 0.6) solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1F1F1F;
+    margin-top: 100px;
+}
+
+.footer a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a+a {
+    margin-left: 40px;
+}
 
 @media (max-width:1024px){
     .gift .item-container{
         width: 50%;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media (max-width:576px){
     .gift .item-container{
         width: 100%;
+    }
+}
+@media (max-width:1024px){
+    .table .block_table{
+        width: 47%;
+    }
+}
+@media (max-width:576px){
+    .offer{
+        width: 50%;
     }
 }
