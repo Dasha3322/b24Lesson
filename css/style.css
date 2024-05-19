@@ -4,15 +4,22 @@ body {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 18px;
     line-height: 150%;
     font-family: "Inter", sans-serif;
 }
-button,input{
+
+button,
+input {
     appearance: none;
 
 }
+
 .container {
     max-width: 1440px;
     width: 96%;
@@ -29,7 +36,7 @@ button,input{
     position: relative;
 }
 
-.hero:after{
+.hero:after {
     content: '';
     height: 100%;
     width: 62.2%;
@@ -41,15 +48,18 @@ button,input{
     bottom: 0;
     right: 0;
 }
-.hero .container{
+
+.hero .container {
     position: relative;
     z-index: 100;
 }
-.hero-img{
+
+.hero-img {
     position: absolute;
     right: -64px;
     bottom: -40px;
 }
+
 .header {
     padding: 30px 0 20px;
     border-bottom: 1px rgba(255, 255, 255, 0.6) solid;
@@ -145,27 +155,31 @@ button,input{
     box-sizing: border-box;
 }
 
-.gift{
+.gift {
     padding: 100px 0;
 }
-.gift .row{
-    display: flex;  
+
+.gift .row {
+    display: flex;
     flex-wrap: wrap;
     margin: -10px;
 }
-.gift .item-container{
+
+.gift .item-container {
     width: 25%;
     padding: 10px;
     box-sizing: border-box;
 }
-.gift .item{
+
+.gift .item {
     height: 100%;
     padding: 25px;
     box-sizing: border-box;
     border-radius: 10px;
     background-color: #E6F9FF;
 }
-.gift .item-icon{
+
+.gift .item-icon {
     height: 65px;
     width: 65px;
     border-radius: 50%;
@@ -175,26 +189,31 @@ button,input{
     justify-content: center;
     margin-bottom: 20px;
 }
-.gift p{
+
+.gift p {
     min-height: 81px;
     display: flex;
     align-items: center;
 }
 
-.section-head{
+.section-head {
     margin-bottom: 60px;
     max-width: 832px;
 }
-.section-head h2{
+
+.section-head h2 {
     color: #1F1F1F;
     font-size: 40px;
     line-height: 130%;
     font-weight: 500;
     margin: 0;
 }
-.section-head.white h2,.section-head.white p{
+
+.section-head.white h2,
+.section-head.white p {
     color: #fff;
 }
+
 .table {
     display: flex;
     flex-wrap: wrap;
@@ -202,7 +221,8 @@ button,input{
     margin: 0 -10px 100px -10px;
 
 }
-.block_table{
+
+.block_table {
     background-color: white;
     width: 31%;
     border: 1px solid white;
@@ -210,23 +230,28 @@ button,input{
     padding: 0 10px;
     margin-bottom: 20px;
 }
+
 .background {
     display: flex;
     flex-wrap: wrap;
 }
-.block_table p{
+
+.block_table p {
     background-color: #E6F9FF;
     border-radius: 5%;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    max-width: 415px;
-    min-height: 136px; /*в макете высота голубых блоков разная, не разобрались как правильно сделать и сделали мин высоту по максимальному блоку*/
+    /* max-width: 415px; */
+    min-height: 136px;
+    /*в макете высота голубых блоков разная, не разобрались как правильно сделать и сделали мин высоту по максимальному блоку*/
     display: flex;
     align-items: center;
     margin: 20px 30px 20px 22px;
-    padding: 0 20px;
+    padding: 10px 20px; /*добавили 10 вместо 0*/
+    box-sizing: border-box;
 }
+
 .block_table h3 {
     font-weight: 500;
     font-size: 24px;
@@ -234,42 +259,51 @@ button,input{
     margin-top: 30px;
     margin-left: 30px;
 }
+
 ul {
-    list-style-type:none;
+    list-style-type: none;
     padding-left: 30px;
     margin-bottom: 30px;
 }
+
 li {
-    margin-bottom: .5em;
+    /* margin-bottom: .5em; */ /*паддинг родителю*/
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
 }
-li::before{
+
+li::before {
     content: '\25CF';
     color: #00AEEF;
     padding-right: 22px;
+    /* display: flex; */
 }
 
-.grey-section{
+.grey-section {
     background-color: #F7F9FC;
     padding: 100px 0;
 }
 
-.offer{
+.offer {
     padding: 50px;
     background-color: #16C7FF;
     border-radius: 10px;
     position: relative;
+    margin-bottom: 100px;
+
 }
-.offer .left{
+
+.offer .left {
     width: 60%;
 }
+
 .block1_white {
     display: flex;
     justify-content: space-between;
 
 }
+
 .left_white {
     color: #ffffff;
     max-width: 781px;
@@ -277,64 +311,78 @@ li::before{
     margin-right: 40px;
     margin-bottom: 40px;
 }
+
 .left_white h2 {
     font-weight: 700;
     font-size: 40px;
     line-height: 130%;
     margin: 0 0 20px 0;
 }
+
 .left_white p {
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     margin: 0;
 }
+
 .cloud-left {
     position: absolute;
     top: 54px;
-    left: 872px;
+    left: 872px; /*измеить на правый*/
 }
+
 .cloud-right {
     position: absolute;
     top: 63px;
     left: 1043px;
 }
+
 .row {
     display: flex;
     justify-content: space-between;
 }
+
 .left {
     /* border: 1px solid black; */
     margin-right: 40px;
     width: 762px;
+
 }
+
 .right {
     /* border: 1px solid black; */
     width: 538px;
+
 }
-.bonuses{
+
+.bonuses {
     padding: 71px 40px;
     background-color: #fff;
     border-radius: 10px;
     max-height: 362px;
     box-sizing: border-box;
 }
+
 .bonuses-title {
     font-weight: 500;
     font-size: 24px;
     line-height: 150%;
     margin: 0 0 40px 0;
 }
-.bonuses .grid{
+
+.bonuses .grid {
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 40px 30px;
 }
-.bonuses-item{
+
+.bonuses-item {
     display: flex;
-    
+
 }
-.bonuses-item .icon{
+
+.bonuses-item .icon {
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -346,30 +394,36 @@ li::before{
     justify-content: center;
 
 }
-.bonuses-item  p{
+
+.bonuses-item p {
     margin: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
 }
-input::placeholder{
+
+input::placeholder {
     color: #1F1F1F;
     padding-left: 20px;
 }
-input{
+
+input {
+    outline: 0;
     height: 60px;
     width: 100%;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */ /*можно убрать*/
     border: 2px solid #E9F2FF;
     border-radius: 10px;
     margin-bottom: 20px;
 }
-.form p, a {
+
+.form p,
+a {
     color: #ffffff;
     font-weight: 400;
     font-size: 14px;
@@ -377,16 +431,19 @@ input{
     max-width: 400px;
     margin-bottom: 27px;
 }
+
 .form button {
     border: 2px solid white;
     border-radius: 10px;
     padding: 20px 24px;
     width: 224px;
-    height: 53px; 
+    height: 53px;
     background-color: #ffffff;
     display: flex;
-    align-items: center;
+    align-items: center; /*coursor:pointer*/
+    /*height 100%, display flex, flex-direction:column, margon top auto*/
 }
+
 .butt {
     display: block;
     box-sizing: border-box;
@@ -401,14 +458,98 @@ input{
     margin: 0;
 }
 
-@media (max-width:1024px){
-    .gift .item-container{
+.free_consult {
+    display: block;
+    box-sizing: border-box;
+    background-color: #16C7FF;
+    max-width: 1440px;
+    width: 96%;
+    margin: 0 auto;
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.free_consult h2 {
+    margin: 0;
+    font-size: 40px;
+    line-height: 130%;
+    max-width: 579px;
+}
+
+.free_consult p {
+    margin: 20px 0 50px;
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 579px;
+}
+
+.consult-link {
+    display: block;
+    max-width: 224px;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px 24px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #115793;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.footer {
+    max-width: 1920px;
+    padding: 30px 240px 20px;
+    border-bottom: 1px rgba(255, 255, 255, 0.6) solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1F1F1F;
+    margin-top: 100px;
+    /* flex: 0 0 auto; */
+}
+
+.footer a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a+a {
+    margin-left: 40px;
+}
+
+@media (max-width:1024px) {
+    .gift .item-container {
         width: 50%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
     }
 }
 
-@media (max-width:576px){
-    .gift .item-container{
+@media (max-width:576px) {
+    .gift .item-container {
         width: 100%;
+    }
+}
+
+@media (max-width:1024px) {
+    .table .block_table {
+        width: 47%;
+    }
+}
+
+@media (max-width:576px) {
+    .offer {
+        width: 50%;
     }
 }
